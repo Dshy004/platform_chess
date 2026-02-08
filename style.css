@@ -1,0 +1,90 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: "Jaini-Regular", Helvetica;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url('./back.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.social-icons {
+    position: fixed;
+    top: 75px;
+    right: 25px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: auto;
+    text-align: center;
+    gap: 25px;
+    color: #fff;
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+}
+.container h1 {
+    font-size: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.container button {
+    padding: 10px 20px;
+    font-size: 35px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.container button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    rotate: -90deg;
+    position: fixed;
+    bottom: 175px;
+    right: 25px;
+}
+.name .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+}
+.name span {
+    font-size: 35px;
+}
